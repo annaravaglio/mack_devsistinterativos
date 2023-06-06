@@ -16,8 +16,8 @@ varCorNoClick = "#FFFFFF"
 varQtdBolinhas = 100
 varCores = 0
 varTentativas = 5
-tamanho_X = 6
-tamanho_Y = 9
+tamanho_X = 10
+tamanho_Y = 10
 noClick = 0
 click = 1
 buttom_click = "<Button-1>"
@@ -27,8 +27,8 @@ class clickColor:
     def __init__(self, tk):
 
         self.images = {
-            "bolinhaNoClick": PhotoImage(file = "E:\\GitHub\\mack_devsistinterativos\\Projeto\\img\\bolinhaNoClick.png"),
-            "bolinhaClick": PhotoImage(file = "E:\\GitHub\\mack_devsistinterativos\\Projeto\\img\\bolinhaClick.png")
+            "bolinhaNoClick": PhotoImage(file = "C:\\Users\\annar\\OneDrive\\Documentos\\Github\\mack_devsistinterativos\\Projeto\\img\\bolinhaNoClick.png"),
+            "bolinhaClick": PhotoImage(file = "C:\\Users\\annar\\OneDrive\\Documentos\\Github\\mack_devsistinterativos\\Projeto\\img\\bolinhaClick.png")
         }
 
         # set up frame
@@ -152,13 +152,13 @@ def configuracao():
 
 janela = Tk()
 janela.title("Projeto - colorReact")
-janela.geometry("1024x600")
+janela.geometry("1024x700")
 janela.resizable(False, False)
 
 meu_menu = Menu(janela)
 janela.config(menu=meu_menu)
 
-menu_novoJogo = Menu(meu_menu, tearoff=0)
+menu_novoJogo = Menu(meu_menu, tearoff=0).add_command(novoJogo())
 menu_dificuldade = Menu(meu_menu, tearoff=0)
 menu_ranking = Menu(meu_menu, tearoff=0)
 menu_ranking.add_command(label="Planilha", command=rankingExport)
@@ -172,10 +172,10 @@ meu_menu.add_cascade(label="Dificuldade", menu=menu_dificuldade, command=selecio
 meu_menu.add_cascade(label="Ranking", menu=menu_ranking)
 meu_menu.add_cascade(label="Configuração", menu=menu_dificuldade, command=configuracao)
 
-nuvem = PhotoImage(file="E:\\GitHub\\mack_devsistinterativos\\Projeto\\img\\nuvem.png")
-nuvem2 = PhotoImage(file="E:\\GitHub\\mack_devsistinterativos\\Projeto\\img\\nuvem2.png")
-bolinhaClick = PhotoImage(file="E:\\GitHub\\mack_devsistinterativos\\Projeto\\img\\bolinhaClick.png")
-bolinhaNoClick = PhotoImage(file="E:\\GitHub\\mack_devsistinterativos\\Projeto\\img\\bolinhaNoClick.png")
+nuvem = PhotoImage(file="C:\\Users\\annar\\OneDrive\\Documentos\\Github\\mack_devsistinterativos\\Projeto\\img\\nuvem.png")
+nuvem2 = PhotoImage(file="C:\\Users\\annar\\OneDrive\\Documentos\\Github\\mack_devsistinterativos\\Projeto\\img\\nuvem2.png")
+bolinhaClick = PhotoImage(file="C:\\Users\\annar\\OneDrive\\Documentos\\Github\\mack_devsistinterativos\\Projeto\\img\\bolinhaClick.png")
+bolinhaNoClick = PhotoImage(file="C:\\Users\\annar\\OneDrive\\Documentos\\Github\\mack_devsistinterativos\\Projeto\\img\\bolinhaNoClick.png")
 
 logo = Label(janela, justify=LEFT, compound = CENTER, padx = 5, image=nuvem, font=("Calibri", 25)).pack(side="left",anchor=NW)
 # iniciar = Button(janela, text="Iniciar", font=("Calibri", 25), command=iniciarJogo).pack(side="top",anchor=N)

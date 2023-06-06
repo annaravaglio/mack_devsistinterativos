@@ -27,15 +27,15 @@ class Minesweeper:
 
         # import images
         self.images = {
-            "plain": PhotoImage(file = "e:\\GitHub\\mack_devsistinterativos\\Projeto\\python-tkinter-minesweeper-master\\python-tkinter-minesweeper-master\\images\\tile_plain.gif"),
-            "clicked": PhotoImage(file = "e:\\GitHub\\mack_devsistinterativos\\Projeto\\python-tkinter-minesweeper-master\\python-tkinter-minesweeper-master\\images\\tile_clicked.gif"),
-            "mine": PhotoImage(file = "e:\\GitHub\\mack_devsistinterativos\\Projeto\\python-tkinter-minesweeper-master\\python-tkinter-minesweeper-master\\images\\tile_mine.gif"),
-            "flag": PhotoImage(file = "e:\\GitHub\\mack_devsistinterativos\\Projeto\\python-tkinter-minesweeper-master\\python-tkinter-minesweeper-master\\images\\tile_flag.gif"),
-            "wrong": PhotoImage(file = "e:\\GitHub\\mack_devsistinterativos\\Projeto\\python-tkinter-minesweeper-master\\python-tkinter-minesweeper-master\\images\\tile_wrong.gif"),
+            "plain": PhotoImage(file = "C:\\Users\\annar\\OneDrive\\Documentos\\Github\\mack_devsistinterativos\\Projeto\\python-tkinter-minesweeper-master\\python-tkinter-minesweeper-master\\images\\tile_plain.gif"),
+            "clicked": PhotoImage(file = "C:\\Users\\annar\\OneDrive\\Documentos\\Github\\mack_devsistinterativos\\Projeto\\python-tkinter-minesweeper-master\\python-tkinter-minesweeper-master\\images\\tile_clicked.gif"),
+            "mine": PhotoImage(file = "C:\\Users\\annar\\OneDrive\\Documentos\\Github\\mack_devsistinterativos\\Projeto\\python-tkinter-minesweeper-master\\python-tkinter-minesweeper-master\\images\\tile_mine.gif"),
+            "flag": PhotoImage(file = "C:\\Users\\annar\\OneDrive\\Documentos\\Github\\mack_devsistinterativos\\Projeto\\python-tkinter-minesweeper-master\\python-tkinter-minesweeper-master\\images\\tile_flag.gif"),
+            "wrong": PhotoImage(file = "C:\\Users\\annar\\OneDrive\\Documentos\\Github\\mack_devsistinterativos\\Projeto\\python-tkinter-minesweeper-master\\python-tkinter-minesweeper-master\\images\\tile_wrong.gif"),
             "numbers": []
         }
         for i in range(1, 9):
-            self.images["numbers"].append(PhotoImage(file = "e:\\GitHub\\mack_devsistinterativos\\Projeto\\python-tkinter-minesweeper-master\\python-tkinter-minesweeper-master\\images\\tile_"+str(i)+".gif"))
+            self.images["numbers"].append(PhotoImage(file = "C:\\Users\\annar\\OneDrive\\Documentos\\Github\\mack_devsistinterativos\\Projeto\\python-tkinter-minesweeper-master\\python-tkinter-minesweeper-master\\images\\tile_"+str(i)+".gif"))
 
         # set up frame
         self.tk = tk
